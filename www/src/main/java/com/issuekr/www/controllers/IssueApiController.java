@@ -50,11 +50,13 @@ public class IssueApiController {
     }
 
     @GetMapping("/detail/{id}")
+    // 디테일 보기
     public ResponseEntity<IssueResponseDetailDto> getDetail(@PathVariable Long id){
         return ResponseEntity.status(HttpStatus.OK).body(service.getDetail(id));
     }
 
     @DeleteMapping("/delete/{id}")
+    // 삭제하기
     public ResponseEntity<String> deleteIssue(@PathVariable Long id){
         return ResponseEntity.status(HttpStatus.OK).body(service.deleteIssue(id));
     }

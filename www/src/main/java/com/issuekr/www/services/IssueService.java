@@ -12,8 +12,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -26,7 +24,7 @@ public class IssueService {
 
     @Transactional
     public Long createIssue (IssueRequestDto dto){
-        /* 게시물 생성 */
+        // 게시물 생성
         return issueRepository.save(dto.toEntity(dto)).getId();
     }
 
@@ -77,6 +75,7 @@ public class IssueService {
 
     @Transactional
     public String deleteIssue(Long id){
+        // 게시물 삭제하기
         issueRepository.deleteById(id);
         return "삭제완료!";
     }
