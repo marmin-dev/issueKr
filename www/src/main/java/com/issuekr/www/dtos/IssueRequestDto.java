@@ -22,7 +22,7 @@ public class IssueRequestDto {
 
     String content;
 
-    // 저장시 엔티티로 바꿀 메서드
+    // 저장 시 엔티티로 바꿀 메서드
     public Issue toEntity(IssueRequestDto dto){
         return Issue.builder()
                 .title(dto.title)

@@ -33,6 +33,6 @@ public class IssueResponseAllDto {
         this.id = issue.getId();
         this.title = issue.getTitle();
         this.author = issue.getAuthor();
-        this.modifiedDate = getModifiedDate();
+        this.modifiedDate = issue.getModifiedDate();
     }
 }
