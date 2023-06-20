@@ -6,7 +6,7 @@ const HeaderDiv = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: darkgrey;
+  background-color: darkgray;
 `;
 
 const HeaderH1 = styled.h1``;
