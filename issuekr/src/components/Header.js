@@ -6,7 +6,7 @@ const HeaderDiv = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: darkgray;
+  background-color: lightgray;
 `;
 
 const HeaderH1 = styled.h1``;
@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <HeaderDiv>
       <HeaderH1>
-        <HeaderLink>IssueKr</HeaderLink>
+        <HeaderLink to="/">IssueKr</HeaderLink>
       </HeaderH1>
     </HeaderDiv>
   );

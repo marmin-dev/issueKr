@@ -3,6 +3,8 @@ import { AllApiMapHandler } from "../apihandler/HomeApiHandler";
 import Header from "../components/Header";
 import IssueMap from "../components/IssueMap";
 import Footer from "../components/Footer";
+import { ResponsiveDiv } from "../components/Responsive";
+import NavBar from "../components/NavBar";
 
 const Homepage = () => {
   const [pings, setPings] = useState([]);
@@ -16,12 +18,14 @@ const Homepage = () => {
     console.log(response);
     setPings(response);
   };
+
   return (
-    <>
+    <ResponsiveDiv>
       <Header />
+      <NavBar />
       <IssueMap pings={pings} />
       <Footer />
-    </>
+    </ResponsiveDiv>
   );
 };
 
